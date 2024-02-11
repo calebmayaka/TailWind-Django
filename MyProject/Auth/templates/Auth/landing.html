@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .nav-link {
+            color: #fff;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-login {
+            background-color: #4a90e2;
+            color: #fff;
+        }
+        .btn-signup {
+            background-color: #49cc90;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation bar -->
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl">Logo</h1>
+            <div>
+                <a href="#" class="nav-link mr-4">Home</a>
+                <a href="#" class="nav-link mr-4">About Us</a>
+                <a href="#" class="nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container mx-auto flex justify-center items-center h-screen">
+        <div class="text-center">
+            <h1 class="text-3xl font-semibold mb-6">Welcome to Our Website</h1>
+            <div class="flex justify-center">
+                <button class="btn btn-login mr-4">Login</button>
+                <button class="btn btn-signup">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional: JavaScript for additional styling -->
+    <script>
+        // Add hover effect to buttons
+        const loginBtn = document.querySelector('.btn-login');
+        const signupBtn = document.querySelector('.btn-signup');
+
+        loginBtn.addEventListener('mouseenter', () => {
+            loginBtn.classList.add('bg-blue-700');
+        });
+        loginBtn.addEventListener('mouseleave', () => {
+            loginBtn.classList.remove('bg-blue-700');
+        });
+
+        signupBtn.addEventListener('mouseenter', () => {
+            signupBtn.classList.add('bg-green-700');
+        });
+        signupBtn.addEventListener('mouseleave', () => {
+            signupBtn.classList.remove('bg-green-700');
+        });
+    </script>
+</body>
+</html>
