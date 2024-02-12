@@ -27,6 +27,14 @@
             background-color: #49cc90;
             color: #fff;
         }
+
+        body {
+            background-image: url('C:\python\TailWind-Django\MyProject\Auth\templates\Auth\img.jpg');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 255, 0.2); /* Blue overlay color with 20% opacity */
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -47,8 +55,10 @@
         <div class="text-center">
             <h1 class="text-3xl font-semibold mb-6">Welcome to Our Website</h1>
             <div class="flex justify-center">
-                <button class="btn btn-login mr-4">Login</button>
-                <button class="btn btn-signup">Sign Up</button>
+                
+
+                <button class="btn btn-login mr-4" > <a href="{% url 'signup' %}" class="btn btn-login mr-4">SignUp</a> </button>
+                <button class="btn btn-signup"> <a href="signin" >Signin</a> </button>
             </div>
         </div>
     </div>
